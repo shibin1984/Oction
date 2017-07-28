@@ -11,12 +11,14 @@ import UIKit
 class AutionVewController: UIViewController {
 
     @IBOutlet weak var auctionTableView: UITableView!
+    @IBOutlet weak var segmentControl: UISegmentedControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         auctionTableView.register(UINib(nibName: "AuctionCurrentItemCell", bundle: Bundle.main), forCellReuseIdentifier: AUCTION_CURRENT_ITEM_CELL)
+        auctionTableView.register(UINib(nibName: "AuctionUpcomingItemCell", bundle: Bundle.main), forCellReuseIdentifier: AUCTION_UPCOMING_ITEM_CELL)
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,6 +26,15 @@ class AutionVewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func segmentValueChanged(_ sender: Any) {
+        if segmentControl.selectedSegmentIndex == 0 {
+            auctionTableView.separatorStyle = .none
+        }
+        else {
+            auctionTableView.separatorStyle = .singleLine
+        }
+        auctionTableView.reloadData()
+    }
     /*
     // MARK: - Navigation
 
@@ -41,7 +52,18 @@ extension AutionVewController: UITableViewDelegate,UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: AUCTION_CURRENT_ITEM_CELL, for: indexPath) as! AuctionCurrentItemCell
+        
+        var cell = UITableViewCell.init()
+        
+        if segmentControl.selectedSegmentIndex == 0 {
+            cell = tableView.dequeueReusableCell(withIdentifier: AUCTION_CURRENT_ITEM_CELL, for: indexPath) as! AuctionCurrentItemCell
+        }
+        else {
+            cell.preservesSuperviewLayoutMargins = false
+            cell.separatorInset = UIEdgeInsets.zero
+            cell.layoutMargins = UIEdgeInsets.zero
+            cell = tableView.dequeueReusableCell(withIdentifier: AUCTION_UPCOMING_ITEM_CELL, for: indexPath) as! AuctionUpcomingItemCell
+        }
         
         return cell
     }
@@ -52,6 +74,11 @@ extension AutionVewController: UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        return 300
+        var height = 120
+        if segmentControl.selectedSegmentIndex == 0 {
+            height = 300
+        }
+        
+        return CGFloat(height)
     }
 }

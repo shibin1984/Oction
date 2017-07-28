@@ -354,7 +354,8 @@
 				TargetAttributes = {
 					3419FDBD1F2B0AF70056EDA0 = {
 						CreatedOnToolsVersion = 8.3.1;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = DBD2DBFKN6;
+						ProvisioningStyle = Manual;
 					};
 					3419FDD31F2B0AF70056EDA0 = {
 						CreatedOnToolsVersion = 8.3.1;
@@ -720,10 +721,13 @@
 			baseConfigurationReference = 298BB741CD92490AF728AB37 /* Pods-Oction.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DBD2DBFKN6;
 				INFOPLIST_FILE = Oction/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shibin.Oction;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8410980b-fbd9-4d80-ad3c-224fa4cb6376";
+				PROVISIONING_PROFILE_SPECIFIER = AllPhonesAllApps;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -733,10 +737,14 @@
 			baseConfigurationReference = 603E288B0DE1EAC50EC1B5CC /* Pods-Oction.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = DBD2DBFKN6;
 				INFOPLIST_FILE = Oction/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shibin.Oction;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9f62c3f3-4c14-4ab4-a965-cf94d74ba7f3";
+				PROVISIONING_PROFILE_SPECIFIER = AllPhoneAllAppsAdHoc;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
