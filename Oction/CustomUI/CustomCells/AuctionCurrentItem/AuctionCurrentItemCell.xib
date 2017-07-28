@@ -12,30 +12,96 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AUCTION_CURRENT_ITEM_CELL" id="KGk-i7-Jjw" customClass="AuctionCurrentItemCell" customModule="Oction" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AUCTION_CURRENT_ITEM_CELL" rowHeight="313" id="KGk-i7-Jjw" customClass="AuctionCurrentItemCell" customModule="Oction" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="325" height="300"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="325" height="300"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xaF-6h-J1F">
-                        <rect key="frame" x="16" y="12" width="288" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eMW-r1-dYZ" userLabel="BorderView">
+                        <rect key="frame" x="10" y="10" width="305" height="289.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="macbookpro" translatesAutoresizingMaskIntoConstraints="NO" id="ecm-i6-1pg" userLabel="ItemImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="305" height="188"/>
+                            </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="od7-Ih-lQE" userLabel="ProgressBar">
+                                <rect key="frame" x="0.0" y="187.5" width="305" height="2.5"/>
+                                <color key="tintColor" red="0.85768956220000003" green="0.12830247710000001" blue="0.0074102521460000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8.125s" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ml1-5u-pdK" userLabel="RemainingTimeLabel">
+                                <rect key="frame" x="10" y="194" width="46" height="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" red="0.85768956218274117" green="0.128302477094623" blue="0.0074102521461073163" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="remaning" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Bj-7M-r2P" userLabel="RemainingLabel">
+                                <rect key="frame" x="61" y="194" width="60.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Macbook Pro 13&quot; 2017 Retina Display" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUK-Oz-LUf" userLabel="ItemNameLabel">
+                                <rect key="frame" x="10" y="216" width="285" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Retail Price HK$6988" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qfn-oa-dd2" userLabel="RetailPriceLabel">
+                                <rect key="frame" x="10" y="240.5" width="285" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HK$1.01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SIS-o5-e1R" userLabel="AuctionPriceLabel">
+                                <rect key="frame" x="10" y="262" width="285" height="19.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FUK-Oz-LUf" firstAttribute="top" secondItem="ml1-5u-pdK" secondAttribute="bottom" constant="5" id="5lh-fF-he5"/>
+                            <constraint firstItem="ml1-5u-pdK" firstAttribute="top" secondItem="od7-Ih-lQE" secondAttribute="bottom" constant="5" id="OGh-RO-DVM"/>
+                            <constraint firstItem="ecm-i6-1pg" firstAttribute="width" secondItem="eMW-r1-dYZ" secondAttribute="width" id="PwY-ea-1Bl"/>
+                            <constraint firstAttribute="trailing" secondItem="FUK-Oz-LUf" secondAttribute="trailing" constant="10" id="QKl-Lo-5lU"/>
+                            <constraint firstItem="Qfn-oa-dd2" firstAttribute="leading" secondItem="eMW-r1-dYZ" secondAttribute="leading" constant="10" id="RZp-7f-oEM"/>
+                            <constraint firstItem="od7-Ih-lQE" firstAttribute="centerX" secondItem="eMW-r1-dYZ" secondAttribute="centerX" id="Rar-nH-i7r"/>
+                            <constraint firstItem="ecm-i6-1pg" firstAttribute="height" secondItem="eMW-r1-dYZ" secondAttribute="height" multiplier="0.65" id="TtK-ce-GWT"/>
+                            <constraint firstItem="1Bj-7M-r2P" firstAttribute="top" secondItem="od7-Ih-lQE" secondAttribute="bottom" constant="5" id="U57-bJ-cQw"/>
+                            <constraint firstItem="ecm-i6-1pg" firstAttribute="centerX" secondItem="eMW-r1-dYZ" secondAttribute="centerX" id="UzX-OO-D1d"/>
+                            <constraint firstAttribute="trailing" secondItem="Qfn-oa-dd2" secondAttribute="trailing" constant="10" id="cPB-tC-Rnt"/>
+                            <constraint firstItem="od7-Ih-lQE" firstAttribute="width" secondItem="eMW-r1-dYZ" secondAttribute="width" id="eVJ-dC-JWr"/>
+                            <constraint firstItem="ml1-5u-pdK" firstAttribute="leading" secondItem="eMW-r1-dYZ" secondAttribute="leading" constant="10" id="gQl-Ty-Y8q"/>
+                            <constraint firstItem="1Bj-7M-r2P" firstAttribute="leading" secondItem="ml1-5u-pdK" secondAttribute="trailing" constant="5" id="gRl-QG-NXa"/>
+                            <constraint firstItem="ecm-i6-1pg" firstAttribute="top" secondItem="eMW-r1-dYZ" secondAttribute="top" id="he7-VL-Cp5"/>
+                            <constraint firstItem="od7-Ih-lQE" firstAttribute="top" secondItem="ecm-i6-1pg" secondAttribute="bottom" id="heY-ff-jsw"/>
+                            <constraint firstItem="Qfn-oa-dd2" firstAttribute="top" secondItem="FUK-Oz-LUf" secondAttribute="bottom" constant="5" id="o5J-XS-cxq"/>
+                            <constraint firstItem="FUK-Oz-LUf" firstAttribute="leading" secondItem="eMW-r1-dYZ" secondAttribute="leading" constant="10" id="um3-0W-2yT"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="xaF-6h-J1F" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.9" id="Dxl-If-6Dt"/>
-                    <constraint firstItem="xaF-6h-J1F" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="aCo-UF-SQP"/>
-                    <constraint firstItem="xaF-6h-J1F" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="ylY-WL-dfc"/>
+                    <constraint firstItem="eMW-r1-dYZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="1eW-co-9BJ"/>
+                    <constraint firstItem="eMW-r1-dYZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="d7b-vO-sNB"/>
+                    <constraint firstAttribute="bottom" secondItem="eMW-r1-dYZ" secondAttribute="bottom" id="ey6-0u-b3h"/>
+                    <constraint firstAttribute="trailing" secondItem="eMW-r1-dYZ" secondAttribute="trailing" constant="10" id="gDn-yL-LL5"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="titleLabel" destination="xaF-6h-J1F" id="aww-WA-LAc"/>
+                <outlet property="actionItemImageView" destination="ecm-i6-1pg" id="f1B-zI-0ga"/>
+                <outlet property="auctionProgressBarView" destination="od7-Ih-lQE" id="yhP-fi-HUO"/>
+                <outlet property="borderView" destination="eMW-r1-dYZ" id="iBN-cb-Ut7"/>
+                <outlet property="itemAuctionPriceLabel" destination="SIS-o5-e1R" id="7Kc-Cz-fO5"/>
+                <outlet property="itemNameLabel" destination="FUK-Oz-LUf" id="mVE-MQ-wAq"/>
+                <outlet property="itemRetailPriceLabel" destination="Qfn-oa-dd2" id="ygz-xf-T7e"/>
+                <outlet property="remainingTimeLabel" destination="ml1-5u-pdK" id="nYl-bM-rfJ"/>
             </connections>
-            <point key="canvasLocation" x="-91" y="-75"/>
+            <point key="canvasLocation" x="-287.5" y="-103.5"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="macbookpro" width="1500" height="985"/>
+    </resources>
 </document>

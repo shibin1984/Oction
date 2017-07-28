@@ -10,11 +10,20 @@ import UIKit
 
 class AuctionCurrentItemCell: UITableViewCell {
 
-    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var borderView: UIView!
+    @IBOutlet weak var actionItemImageView: UIImageView!
+    @IBOutlet weak var auctionProgressBarView: UIProgressView!
+    @IBOutlet weak var remainingTimeLabel: UILabel!
+    @IBOutlet weak var itemNameLabel: UILabel!
+    @IBOutlet weak var itemRetailPriceLabel: UILabel!
+    @IBOutlet weak var itemAuctionPriceLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        borderView?.layer.borderWidth = 0.35
+        borderView?.layer.borderColor = UIColor.lightGray.cgColor
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -22,5 +31,4 @@ class AuctionCurrentItemCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
 }
