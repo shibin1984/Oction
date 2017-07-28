@@ -7,7 +7,7 @@ target ‘Oction’ do
 
     # Common Pods to be used in all the targets
     pod 'Alamofire'
-
+    
     # Target specific pods.
     target ‘OctionTests' do
         inherit! :search_paths
