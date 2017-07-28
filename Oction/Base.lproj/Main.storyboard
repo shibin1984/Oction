@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--oction.co-->
+        <!--Aution Vew Controller-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="AutionVewController" customModule="Oction" customModuleProvider="target" sceneMemberID="viewController">
@@ -31,15 +31,30 @@
                                     <segment title="UPCOMING"/>
                                 </segments>
                             </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Qk6-J7-lTI">
+                                <rect key="frame" x="0.0" y="100" width="375" height="518"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="9pv-A4-QxB" id="KWY-QE-ZfS"/>
+                                    <outlet property="delegate" destination="9pv-A4-QxB" id="ySA-dQ-a13"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Qk6-J7-lTI" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" id="1Ak-j7-UC3"/>
                             <constraint firstItem="C1F-iP-GzS" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="4yu-cl-en5"/>
+                            <constraint firstItem="Qk6-J7-lTI" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="FQ6-Pf-poJ"/>
                             <constraint firstItem="C1F-iP-GzS" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" id="MdG-dx-7jX"/>
+                            <constraint firstItem="Qk6-J7-lTI" firstAttribute="top" secondItem="C1F-iP-GzS" secondAttribute="bottom" constant="1" id="XLq-BK-lZm"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="Qk6-J7-lTI" secondAttribute="bottom" id="xtJ-eS-OuY"/>
                             <constraint firstItem="C1F-iP-GzS" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="yoV-M7-uIc"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="oction.co" id="Q1a-ZG-Z1y"/>
+                    <navigationItem key="navigationItem" id="Q1a-ZG-Z1y"/>
+                    <connections>
+                        <outlet property="auctionTableView" destination="Qk6-J7-lTI" id="hsj-IZ-W9i"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>

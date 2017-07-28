@@ -21,6 +21,8 @@
 		3419FE0B1F2B193E0056EDA0 /* AuctionCurrentItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3419FE091F2B193E0056EDA0 /* AuctionCurrentItemCell.xib */; };
 		3419FE0E1F2B19560056EDA0 /* AuctionUpcomingItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3419FE0C1F2B19560056EDA0 /* AuctionUpcomingItemCell.swift */; };
 		3419FE0F1F2B19560056EDA0 /* AuctionUpcomingItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3419FE0D1F2B19560056EDA0 /* AuctionUpcomingItemCell.xib */; };
+		3419FE111F2B1AF60056EDA0 /* TestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3419FE101F2B1AF60056EDA0 /* TestTableViewController.swift */; };
+		3419FE131F2B1E470056EDA0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3419FE121F2B1E470056EDA0 /* Constants.swift */; };
 		45A3AF73D29CA4D77789E948 /* Pods_OctionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B3B181E5498B77A5EAB5429 /* Pods_OctionTests.framework */; };
 		7665CEF0FEF9C61DBA062F80 /* Pods_Oction.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 754BDBA965EFF6F3364AF08E /* Pods_Oction.framework */; };
 /* End PBXBuildFile section */
@@ -64,6 +66,8 @@
 		3419FE091F2B193E0056EDA0 /* AuctionCurrentItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuctionCurrentItemCell.xib; sourceTree = "<group>"; };
 		3419FE0C1F2B19560056EDA0 /* AuctionUpcomingItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuctionUpcomingItemCell.swift; sourceTree = "<group>"; };
 		3419FE0D1F2B19560056EDA0 /* AuctionUpcomingItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuctionUpcomingItemCell.xib; sourceTree = "<group>"; };
+		3419FE101F2B1AF60056EDA0 /* TestTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestTableViewController.swift; sourceTree = "<group>"; };
+		3419FE121F2B1E470056EDA0 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3B3B181E5498B77A5EAB5429 /* Pods_OctionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OctionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		603E288B0DE1EAC50EC1B5CC /* Pods-Oction.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Oction.release.xcconfig"; path = "Pods/Target Support Files/Pods-Oction/Pods-Oction.release.xcconfig"; sourceTree = "<group>"; };
 		6D98C2F4E40E400696EFC16B /* Pods-OctionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OctionTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OctionTests/Pods-OctionTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -199,6 +203,7 @@
 		3419FDF71F2B0E110056EDA0 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				3419FE121F2B1E470056EDA0 /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -222,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				3419FDFF1F2B106D0056EDA0 /* AutionVewController.swift */,
+				3419FE101F2B1AF60056EDA0 /* TestTableViewController.swift */,
 			);
 			path = Aution;
 			sourceTree = "<group>";
@@ -559,7 +565,9 @@
 				3419FE001F2B106D0056EDA0 /* AutionVewController.swift in Sources */,
 				3419FDF91F2B0E110056EDA0 /* AppDelegate.swift in Sources */,
 				3419FE041F2B10880056EDA0 /* AccountViewController.swift in Sources */,
+				3419FE111F2B1AF60056EDA0 /* TestTableViewController.swift in Sources */,
 				3419FE021F2B107D0056EDA0 /* CreditViewController.swift in Sources */,
+				3419FE131F2B1E470056EDA0 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
