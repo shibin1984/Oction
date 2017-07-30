@@ -36,28 +36,28 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="o2w-9e-syb" secondAttribute="height" multiplier="1:1" id="XlQ-bO-0Wu"/>
                                 </constraints>
-                                <state key="normal" image="bell_green"/>
+                                <state key="normal" image="bellFill"/>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bell_green" translatesAutoresizingMaskIntoConstraints="NO" id="s8t-TY-0Z8" userLabel="RetailPriceIcon">
-                                <rect key="frame" x="127" y="43.5" width="20" height="20"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bellEmpty" translatesAutoresizingMaskIntoConstraints="NO" id="s8t-TY-0Z8" userLabel="RetailPriceIcon">
+                                <rect key="frame" x="127" y="43.5" width="19" height="19"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="s8t-TY-0Z8" secondAttribute="height" multiplier="1:1" id="PJH-RX-l00"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Retail Price HK$6988" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="da4-s1-i8m" userLabel="RetailPriceLabel">
-                                <rect key="frame" x="152" y="46.5" width="148" height="14.5"/>
+                                <rect key="frame" x="151" y="46" width="149" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bell_green" translatesAutoresizingMaskIntoConstraints="NO" id="Csr-U7-FeZ" userLabel="StartTimeIcon">
-                                <rect key="frame" x="127" y="68.5" width="20" height="20"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bellEmpty" translatesAutoresizingMaskIntoConstraints="NO" id="Csr-U7-FeZ" userLabel="StartTimeIcon">
+                                <rect key="frame" x="127" y="67.5" width="19" height="19"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Csr-U7-FeZ" secondAttribute="height" multiplier="1:1" id="yS4-0b-RDc"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Starts in 2d 17hr 8mins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fHJ-ef-6aw" userLabel="RetailPriceLabel">
-                                <rect key="frame" x="152" y="71.5" width="148" height="14.5"/>
+                                <rect key="frame" x="151" y="70" width="149" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -86,6 +86,7 @@
                         </constraints>
                     </view>
                 </subviews>
+                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="fTw-lD-xhI" secondAttribute="trailing" constant="10" id="3fQ-IX-4N1"/>
                     <constraint firstItem="fTw-lD-xhI" firstAttribute="leading" secondItem="PP2-1w-5yD" secondAttribute="leading" constant="10" id="IT4-vN-f0O"/>
@@ -97,7 +98,8 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="bell_green" width="18" height="20"/>
+        <image name="bellEmpty" width="18" height="19"/>
+        <image name="bellFill" width="14" height="17"/>
         <image name="iphone" width="1000" height="1000"/>
     </resources>
 </document>
