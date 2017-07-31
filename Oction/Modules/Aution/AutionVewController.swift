@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import TZSegmentedControl
 
 class AutionVewController: UIViewController {
 
@@ -18,9 +17,6 @@ class AutionVewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        let titleCont = TZSegmentedControl(sectionTitles: ["CURRENT","UPCOMING"])
-        titleCont.frame = CGRect(x: 0, y: 50, width: self.view.frame.width, height: 50)
-        self.view.addSubview(titleCont)
         
         auctionTableView.register(UINib(nibName: "AuctionCurrentItemCell", bundle: Bundle.main), forCellReuseIdentifier: AUCTION_CURRENT_ITEM_CELL)
         auctionTableView.register(UINib(nibName: "AuctionUpcomingItemCell", bundle: Bundle.main), forCellReuseIdentifier: AUCTION_UPCOMING_ITEM_CELL)
